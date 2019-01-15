@@ -1,18 +1,18 @@
 import pymysql.cursors
 
-host='95.163.200.245'
-user='root'
-password='queue11235813'
-db='security_data'
-charset='utf8mb4'
-cursorclass=pymysql.cursors.DictCursor
-
-# host='localhost'
+# host='95.163.200.245'
 # user='root'
-# password='123456'
-# db='conceptlistener'
+# password='queue11235813'
+# db='security_data'
 # charset='utf8mb4'
 # cursorclass=pymysql.cursors.DictCursor
+
+host='localhost'
+user='jacklaiu'
+password='queue11235813'
+db='trading'
+charset='utf8mb4'
+cursorclass=pymysql.cursors.DictCursor
 
 def getConn():
     connection = pymysql.connect(host=host,
