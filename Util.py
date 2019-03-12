@@ -214,7 +214,7 @@ def isOpen(dateYMD):
     dateYMD = dateYMD[0:10]
     year = dateYMD[0:4]
     if year > '2019':
-        print '需要更新OpenDates'
+        print('需要更新OpenDates')
         exit()
     OpenDates = getOpenDates()
     str = ";".join(OpenDates)
@@ -257,7 +257,11 @@ def nextOpenDate(date, rightCount=1):
         index = index + 1
     return None
 
-
+def getRate(fromPrice, toPrice):
+    fromPrice = float(fromPrice)
+    toPrice = float(toPrice)
+    rate = round(round(((toPrice - fromPrice) / fromPrice), 4) * 100, 2)
+    return rate
 
 
 

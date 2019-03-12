@@ -11,4 +11,4 @@ def log(content):
 
 def consoleLog(logtype="运行中", content="没有内容"):
     string = str(logtype) + " [" + util.getYMDHMS() + "]: " + str(content)
-    print string
+    print(string)
